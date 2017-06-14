@@ -9,15 +9,15 @@ Forms module is a module that provides forms submission.
 Open cmd and run the following command:
 
 ```
-npm install https://github.com/alexcarreira/devscope.forms.git
+npm install https://github.com/alexcarreira/json.forms.git
 ```
 
 ### Usage
 
 ##### app.module.ts
 ```
-import { FormsModule } from '../../node_modules/devscope.forms/forms/forms.module';
-import { Forms } from '../../node_modules/devscope.forms/forms/form.component';
+import { FormsModule } from '../../node_modules/json.forms/forms/forms.module';
+import { Forms } from '../../node_modules/json.forms/forms/form.component';
 ...
 @NgModule({
   imports: [
@@ -31,7 +31,7 @@ import { Forms } from '../../node_modules/devscope.forms/forms/form.component';
 
 ##### app.component.ts
 ```
-import { Forms } from '../../node_modules/devscope.forms/forms/form.component';
+import { Forms } from '../../node_modules/json.forms/forms/form.component';
 ```
 ### Prerequisites
 
