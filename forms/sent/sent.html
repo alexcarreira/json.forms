@@ -1,0 +1,20 @@
+﻿<ion-header>
+    <ion-navbar>
+        <ion-title>Sent</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-list *ngIf="length > 0">
+
+        <ion-item ion-item *ngFor="let s of sentList">
+           {{s.created | date:'medium'}}
+        </ion-item>
+
+    </ion-list>
+
+    <ion-list *ngIf="length === 0">
+        <h4>Ainda não foram enviados nenhuns forms</h4>
+    </ion-list>
+</ion-content>

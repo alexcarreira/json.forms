@@ -1,0 +1,18 @@
+﻿<ion-header>
+    <ion-navbar>
+        <ion-title >Form</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list *ngIf="isFromJsonConfig" no-lines>
+        <sf-form [schema]="formSchema" [model]="formModel" (onChange)="value=$event.value">
+          
+        </sf-form>
+        
+        <ion-row>
+            <button ion-button (click)="submitForm(value)">Submit</button>
+            <button ion-button color="danger" (click)="goToHome()">Cancel</button>
+        </ion-row>
+    </ion-list>
+</ion-content>

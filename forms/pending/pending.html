@@ -1,0 +1,21 @@
+﻿<ion-header>
+    <ion-navbar>
+        <ion-title>Pending</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-list *ngIf="length > 0">
+
+        <ion-item ion-item *ngFor="let p of pendingList">
+           {{p.created | date:'medium'}}
+        </ion-item>
+
+    </ion-list>
+
+    <ion-list *ngIf="length === 0">
+        <h4>Não existem forms pendentes</h4>
+    </ion-list>
+
+</ion-content>
